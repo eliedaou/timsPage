@@ -1,0 +1,13 @@
+<section class="hero{% if page.body_class != 'overview' %} pagehead {% endif %}">
+  <div class="container">
+    {% if page.body_class == 'overview' %}
+    <div class="image">
+      <img src="/img/{{site.image_filename}}" alt="{{ site.name }}" width="160px">
+    </div>
+    {% endif %}
+    <div class="intro">
+      {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+      {% if page.byline %}<p>{{ page.byline }}</p>{% endif %}
+    </div>
+  </div>
+</section>

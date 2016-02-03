@@ -1,0 +1,21 @@
+<div class="top-bar">&nbsp;</div>
+<header>
+  <div class="container">
+    <nav id="nav">
+      <ul class="content">
+        <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
+          <a href="{{ site.myURL }}/">About</a>
+        </li>
+        <li{% if page.body_class == 'experience' %} class="current"{% endif %}>
+          <a href="{{ site.myURL }}/experience/">Experience</a>
+        </li>
+        <li{% if page.body_class == 'education' %} class="current"{% endif %}>
+          <a href="{{ site.myURL }}/education/">Education</a>
+        </li>
+        <li{% if page.body_class == 'contact' %} class="current"{% endif %}>
+          <a href="{{ site.myURL }}/contact/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
